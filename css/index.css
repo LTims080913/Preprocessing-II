@@ -175,11 +175,24 @@ img {
   align-content: center;
   margin: 3% 20%;
 }
+@media screen and (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    margin: 3%;
+  }
+}
 .links {
   display: flex;
   justify-content: space-around;
   width: 42%;
   font-size: 180%;
+}
+@media screen and (max-width: 500px) {
+  .links {
+    width: 100%;
+    margin-top: 4%;
+  }
 }
 .links a {
   justify-content: space-between;
@@ -196,12 +209,30 @@ img {
   width: 60%;
   margin: 0% 20%;
 }
+@media screen and (max-width: 500px) {
+  .funbus .yfun {
+    width: 90%;
+    margin: 0% 6%;
+  }
+}
 .top-content .h2 {
   margin: 0% 0% 2% 20%;
+}
+@media screen and (max-width: 500px) {
+  .top-content .h2 {
+    margin: 0 0 2% 6%;
+  }
 }
 .top-content .p {
   border-bottom: 2px dashed lightgray;
   margin: 0% 20%;
+}
+@media screen and (max-width: 500px) {
+  .top-content .p {
+    margin: 0% 0% 2% 0%;
+    width: 100%;
+    padding: 0% 6%;
+  }
 }
 .footer {
   width: 100%;
@@ -220,13 +251,29 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.home .content-section h2 {
+  margin: 0 13%;
+  width: 112%;
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media screen and (max-width: 500px) {
+  .home .content-section .text-content .php {
+    width: 200%;
+    margin: 0 13%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media screen and (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 90%;
+    margin: 0 10%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -234,6 +281,13 @@ img {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media screen and (max-width: 500px) {
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 2%;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -247,8 +301,20 @@ img {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media screen and (max-width: 500px) {
+  .home .content-destination {
+    margin: 0% 0% 2% 0%;
+    width: 100%;
+    padding: 0% 6%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
+}
+@media screen and (max-width: 500px) {
+  .home .content-destination img {
+    width: 100%;
+  }
 }
 .home .content-pick {
   padding-top: 30px;
@@ -256,9 +322,25 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 100%;
+  }
+}
+.home .content-pick .destination p {
+  padding: 2% 10%;
+}
+.home .content-pick .destination h4 {
+  padding: 0 10%;
 }
 .home .btn {
   width: 80%;
@@ -270,4 +352,19 @@ img {
   text-align: center;
   font-size: 170%;
   color: white;
+}
+@media screen and (max-width: 500px) {
+  .home .btn {
+    width: 70%;
+    margin: 0 0 10% 10%;
+  }
+}
+.home .btn:hover {
+  background-color: white;
+  color: #17A2B8;
+}
+@media screen and (max-width: 500px) {
+  .home .btn:hover {
+    padding-top: 13%;
+  }
 }

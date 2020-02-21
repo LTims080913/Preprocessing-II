@@ -4,12 +4,23 @@
     .flex(space-between);
     .spacing(5%, center);
     margin: 3% 20%;
-}
+    @media @mobile{
+        flex-direction: column;
+        text-align: center;
+        margin: 3%;
+    }
+    
+    
+}//this closes .navbar
 
 .links {
     .flex(space-around);
     width: 42%;
     font-size: 180%;
+    @media @mobile{
+        width: 100%;
+        margin-top: 4%;
+    }
 
 
     a {
@@ -32,6 +43,10 @@
     .yfun{
         width: 60%;
         margin: 0% 20%;
+        @media @mobile{
+            width: 90%;
+            margin: 0% 6%;
+        }
     }//this closes .yfun
 }//this closes .funbus
 
@@ -39,9 +54,16 @@
     
     .h2{
         margin: 0% 0% 2% 20%;
+        @media @mobile{
+            margin: 0 0 2% 6%;
+        }
     }
     .p{
         border-bottom: 2px dashed lightgray;
         margin: 0% 20%;
+        @media @mobile{
+        .mediawidth();
+        .mediapad();
+    }
     }
 }
