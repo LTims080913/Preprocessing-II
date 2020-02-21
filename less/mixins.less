@@ -1,1 +1,36 @@
 // Mixins in here
+
+.flex(@justify:right){
+    display: flex;
+    justify-content: @justify;
+}
+.spacing(@space, @align){
+    margin: @space;
+    align-content: @align;
+}
+
+.btn-style(){
+    width: 80%;
+    height: 16%;
+    background-color: @button-bg;
+    border-radius: 13px;
+    padding-top: 5%;
+    margin: 0 0 10% 0;
+    text-align: center;
+    font-size: 170%;
+    color: white;
+    }
+    
+
+.mediawidth(){
+    margin: 0% 0% 2% 0%;
+    width: 100%;
+}
+.mediapad(){
+    padding: 0% 6%;
+}
+.mediaimg(){
+    width: 90%;
+    margin: 0 10%;
+
+}
