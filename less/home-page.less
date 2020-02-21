@@ -104,6 +104,8 @@
 
   .btn {
     .btn-style();
+    .keyframes(fade-in;{0% {opacity: 0;} 100% {opacity: 1; }});
+    .animation(fade-in 0.2s linear infinite alternate);
     @media @mobile{
       width: 70%;
         margin: 0 0 10% 10%;
